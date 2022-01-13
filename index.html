@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- css -------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/threejs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
+
+    <!-- ----------- wow ---------- -->
+    <link rel="stylesheet" href="css/wow/animate.css">
+
+    <title>PORTFOLIO</title>
+</head>
+<body>
+
+<!-- ------------------- preload ------------------->
+<!--<div class="preload">-->
+<!--    <div class="lds-ripple"><div></div><div></div></div>-->
+<!--</div>-->
+
+
+<!-- ----------------- three js animation content -------------- -->
+<div class="container-fluid header disable-selection" id="home">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-md-8">
+            <div class="row home">
+                <div class="col first">
+                    <h6>HELLO, I'M</h6>
+                    <h1><strong>INTISSAR NECIB</strong></h1>
+                </div>
+                <div class="col second">
+                    <h6>I'M</h6>
+                    <h1><strong>A WEB DEVELOPER</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="col main-button">
+        <a href="#navbar"><button class="btn-hover btn">My portfolio</button></a>
+        <a href="#navbar"><button class="btn-hover btn">Contact me</button></a>
+    </div>
+</div>
+
+
+<!-- ----------------- navbar ------------ -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="docs/Necib_Intissar_Resume.pdf">RESUME</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- --------------------- about -------------------- -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="main-title">ABOUT ME</h2>
+        <div class="row">
+            <div class="col-md-6 me" style="color: #DDDDDD">
+                    <div class="wrap-image me-img">
+                        <img src="images/myself.JPG" alt="">
+                    </div>
+                    <div class="sub-title">
+                        <h1 class="wobble" data-animation="upscale">FULL<br></h1>
+                        <h1 class="wobble" data-animation="upscale">STACK</h1>
+                        <h1 class="wobble" data-animation="upscale">DEVELOPER</h1>
+                    </div>
+
+                <p>An ambition, serious and hard-working
+                    person who admires the IT field with good
+                    experience in graphic and UX/UI design.
+                    Always perseveres to achieve the best results
+                    and is motivated to face new challenges to
+                    polish her skills and learn new experiences.
+                </p>
+                <ul class="social-icons" style="float: left;">
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 skills">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner row">
+                        <div class="carousel-item active">
+                            <div class="col">
+                                <h2 class="title mx-auto">BACKEND</h2>
+                                <ul class="skill">
+                                    <li><span class="blueline laravel"></span><em>LARAVEL</em></li>
+                                    <li><span class="blueline php"></span><em>PHP</em></li>
+                                    <li><span class="blueline mysql"></span><em>MySQL</em></li>
+                                    <li><span class="blueline js"></span><em>JAVASCRIPT</em></li>
+                                    <li><span class="blueline jquery"></span><em>jQUERY</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col">
+                                <h2 class="title mx-auto">FRONTEND</h2>
+                                <ul class="skill">
+                                    <li><span class="blueline html"></span><em>HTML</em></li>
+                                    <li><span class="blueline css"></span><em>CSS</em></li>
+                                    <li><span class="blueline react"></span><em>REACT</em></li>
+                                    <li><span class="blueline vusjs"></span><em>VUEJS</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col">
+                                <h2 class="title mx-auto">LANGUAGES</h2>
+                                <ul class="skill">
+                                    <li><span class="blueline arabe"></span><em>ARABE</em></li>
+                                    <li><span class="blueline english"></span><em>ENGLISH</em></li>
+                                    <li><span class="blueline french"></span><em>FRENCH</em></li>
+                                    <li><span class="blueline german"></span><em>GERMAN</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ---------------------- my works ---------------------- -->
+<section class="works" id="portfolio">
+    <div class="container">
+        <h2 class="main-title">MY PORTFOLIO</h2>
+        <div class="work">
+            <img src="images/1.png" class="img-works">
+            <div class="necib overlay"></div>
+            <div class="row text" style="text-align: right;">
+                <div class="col-md-5"></div>
+                <div class="col-md-7 mt-5">
+                    <h6>Featured Projects</h6>
+                    <h3 class="mb-5">Ecommerce Website</h3>
+                    <p class="mb-3">Even the all-powerful Pointing has no control about the blind texts it is.
+                        Even the all powerful Pointing has no control about the blind texts it is.</p>
+                    <div class="tech-used">
+                        <ul class="list-unstyled d-flex justify-content-end">
+                            <li>laravel</li>
+                            <li>react</li>
+                            <li>phpmyadmin</li>
+                            <li>postman</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <a href="#"><span class="fab fa-github"></span></a>
+                        <a href="#"><span class="fas fa-external-link-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/2.jpg" class="img-works" style="left: 50%;">
+            <div class="necib overlay" style="left: 50%;"></div>
+            <div class="row text">
+                <div class="col-md-7 mt-5">
+                    <h6>Featured Projects</h6>
+                    <h3 class="mb-5">Ecommerce Website</h3>
+                    <p class="mb-3">Even the all-powerful Pointing has no control about the blind texts it is.
+                        Even the all powerful Pointing has no control about the blind texts it is.</p>
+                    <div class="right-tech-used">
+                        <ul class="list-unstyled d-flex">
+                            <li>laravel</li>
+                            <li>react</li>
+                            <li>phpmyadmin</li>
+                            <li>postman</li>
+                        </ul>
+                    </div>
+                    <div class="right-links">
+                        <a href="#"><span class="fab fa-github"></span></a>
+                        <a href="#"><span class="fas fa-external-link-alt"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/3.jpg" class="img-works">
+            <div class="necib overlay"></div>
+            <div class="row text" style="text-align: right;">
+                <div class="col-md-5"></div>
+                <div class="col-md-7 mt-5">
+                    <h6>Featured Projects</h6>
+                    <h3 class="mb-5">Ecommerce Website</h3>
+                    <p class="mb-3">Even the all-powerful Pointing has no control about the blind texts it is.
+                        Even the all powerful Pointing has no control about the blind texts it is.</p>
+                    <div class="tech-used">
+                        <ul class="list-unstyled d-flex justify-content-end">
+                            <li>laravel</li>
+                            <li>react</li>
+                            <li>phpmyadmin</li>
+                            <li>postman</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <a href="#"><span class="fab fa-github"></span></a>
+                        <a href="#"><span class="fas fa-external-link-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/4.jpg" class="img-works" style="left: 50%;">
+            <div class="necib overlay" style="left: 50%;"></div>
+            <div class="row text">
+                <div class="col-md-7 mt-5">
+                    <h6>Featured Projects</h6>
+                    <h3 class="mb-5">Ecommerce Website</h3>
+                    <p class="mb-3">Even the all-powerful Pointing has no control about the blind texts it is.
+                        Even the all powerful Pointing has no control about the blind texts it is.</p>
+                    <div class="right-tech-used">
+                        <ul class="list-unstyled d-flex">
+                            <li>laravel</li>
+                            <li>react</li>
+                            <li>phpmyadmin</li>
+                            <li>postman</li>
+                        </ul>
+                    </div>
+                    <div class="right-links">
+                        <a href="#"><span class="fab fa-github"></span></a>
+                        <a href="#"><span class="fas fa-external-link-alt"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+        <div class="view-more">
+            <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="40" width="150" />
+                    <div id="text">
+                        <a href=""><span class="spot"></span>Show more</a>
+                    </div>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ------------------ open source ------------------ -->
+<section class="open-source">
+    <div class="container">
+        <div class="sub-title mb-5">
+            <h6>EXPERIMENTS & OPEN SOURCE</h6>
+            <h1 class="wobble" data-animation="upscale">Coding is fun.</h1>
+        </div>
+        <div class="row cards-list">
+            <div class="col-md-4">
+                <div class="card mx-auto"></div>
+                <button class="card-btn position ">Discover more</button>
+            </div>
+            <div class="col-md-4">
+                <div class="card mx-auto"></div>
+                <button class="card-btn position">Discover more</button>
+            </div>
+            <div class="col-md-4">
+                <div class="card mx-auto"></div>
+                <button class="card-btn position">Discover more</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------------- contact ----------------- -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="main-title">CONTACT ME</h2>
+        <div class="row">
+            <div class="col-md-5">
+                <p class="text mb-5">I’m interested in freelance opportunities – especially ambitious or large projects.
+                    However, if you have other request or question, don’t hesitate to use the form.</p>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <div class="view-more">
+                        <div class="svg-wrapper">
+                            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="shape" height="40" width="150" />
+                                <div id="text">
+                                    <a href=""><span class="spot"></span>Send</a>
+                                </div>
+                            </svg>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 map">
+                <img src="images/map.jpg" class="img-contact">
+                <div class="necib overlay"></div>
+                <div class="infos">
+                    <p>cité riad benchikou 140,
+                        constantine 25000, Algeria</p>
+                    <p><span>@</span> intissar@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ---------------- footer ------------------ -->
+<section class="footer">
+    <div class="container">
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <div class="copyright">
+            INTISSAR NECIB <span style="color: #00E8FF">©2022</span>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="js/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f9c10aff2c.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/wow/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>

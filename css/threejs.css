@@ -1,0 +1,131 @@
+
+  canvas {
+      /*display: block;*/
+      height: 100% !important;
+      width: 100% !important;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .header {
+    /*top: 45%;*/
+    color: #DDDDDD;
+      width: 100%;
+      height: 100vh;
+      padding-top: 300px;
+      text-align: center;
+      cursor: crosshair;
+  }
+.header h1{
+    font-weight: bolder;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.header h6{
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+  .footer {
+    bottom:3%;
+  }
+  .description {
+    color: gray;
+    padding-top: 50px;
+  }
+  .btn {
+    border-radius: 30px;
+    padding: 10px 30px;
+  }
+  a, a:hover, a:visited {
+    color: red;
+    text-decoration: none;
+  }
+  .disable-selection {
+    -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+ -webkit-user-select: none; /* Chrome, Safari, and Opera */
+ -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+/*-------------- title animation -------------*/
+.header .home{
+    position: relative;
+}
+.header .home .first{
+    position: absolute;
+    animation: first 5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes first {
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    50%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.header .home .second{
+    position: absolute;
+    animation: second 5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    visibility: hidden;
+}
+@keyframes second {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/*-------------------- button ---------------*/
+.header .main-button{
+    margin-top: 150px !important;
+}
+.header .main-button .btn-hover {
+    width: 160px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.header .main-button .btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.header .main-button .btn-hover:focus {
+    outline: none;
+}
+.header .main-button .btn-hover.btn {
+    background-image: linear-gradient(to right, #111111, #333333, #31C4BE);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.5);
+}
