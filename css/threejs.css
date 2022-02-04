@@ -55,7 +55,7 @@
 }
 .header .home .first{
     position: absolute;
-    animation: first 5s ease-in-out;
+    animation: first 6s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 3s;
 }
@@ -75,7 +75,7 @@
 }
 .header .home .second{
     position: absolute;
-    animation: second 5s ease-in-out;
+    animation: second 6s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 3s;
     visibility: hidden;

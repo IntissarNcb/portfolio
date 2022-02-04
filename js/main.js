@@ -209,19 +209,23 @@ function animate() {
 animate();
 init();
 
-// preload
+
+
+
+// ---------------------------- my code
+// --------------preload
 window.addEventListener("load", function (){
   const loader = this.document.querySelector(".preload");
   loader.className += " hide";
 })
 
 // hover img-work
-window.addEventListener("mouseover", function (){
-  var hover = document.querySelector(".necib");
-  hover.classList.toggle("overlay");
-})
+// window.addEventListener("mouseover", function (){
+//   var hover = document.querySelector(".necib");
+//   hover.classList.toggle("overlay");
+// })
 
-//hover animation title
+// ----------------- hover animation title
 var wobbleElements = document.querySelectorAll('.wobble');
 
 wobbleElements.forEach(function(el){
@@ -262,3 +266,14 @@ wobbleElements.forEach(function(el){
     el.classList.remove('mouseover');
   });
 });
+
+
+// --------------- tab nav active
+$(".nav-link").on("click", function (){
+  $(".nav-link").removeClass("active");
+  $(this).addClass("active");
+
+});
+
+// ------------- active item when scroll
+

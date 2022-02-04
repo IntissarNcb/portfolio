@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 }
 
 .preload.hide{
-    animation: fade 3s ease-in-out;
+    animation: fade 2s ease-in-out;
     animation-fill-mode: forwards;
 }
 @keyframes fade {
@@ -88,10 +88,7 @@ body::-webkit-scrollbar {
 .navbar .navbar-nav .nav-item{
     padding: 0 20px;
 }
-.navbar .navbar-nav .nav-item .nav-link:hover{
-    color: #31C4BE !important;
-}
-.navbar .navbar-nav .nav-item .active{
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .active{
     color: #31C4BE !important;
 }
 
@@ -183,26 +180,30 @@ body::-webkit-scrollbar {
     font-size: large;
 }
 .works .work{
+    margin-bottom: 150px;
+}
+.works .work .left-side{
     position: relative;
-    margin-bottom: 100px;
 }
 .works .work .img-works{
     position: absolute;
-    width: 50%;
-    height: 350px;
+    width: 600px;
+    height: 400px;
     object-fit: cover;
-    z-index: -1;
 }
 .works .work .overlay{
-    width: 50%;
-    height: 350px;
+    width: 600px;
+    height: 400px;
     position: absolute;
     background-color: #31C4BE;
     opacity: 0.2;
-    z-index: -1;
+}
+.works .work .left-side:hover .overlay {
+    display: none !important;
 }
 .works .work .text{
     color: #DDDDDD;
+    position: relative;
 }
 .works .work .text h6{
     color: #31C4BE;
@@ -351,25 +352,14 @@ make it thinner, then set it to again wrap around the entire parent element.
     animation: upscale 0.5s 1;
 }
 
-.card {
+
+/*----------- cards --------------*/
+.cards {
     position: relative;
     width: 300px;
     height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-image: url("images/open-source.jpg");
-    transition: 0.3s ease-in;
 }
-.card:hover::before{
-    filter: blur(5px);
-    transform: rotate(0deg);
-    cursor: pointer;
-}
-.card:hover + .card-btn, .card-btn:hover {
-    display: block;
-}
-.card:before {
-    content: "";
+.cards .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -381,24 +371,55 @@ make it thinner, then set it to again wrap around the entire parent element.
     filter: blur(10px);
     transition: 0.3s ease-in;
 }
-.open-source .position{
-    position: absolute;
-    z-index: 2;
-    margin-top: -100px;
-    margin-left: 100px;
+.cards:hover .overlay{
+    filter: blur(5px);
+    transform: rotate(0deg);
 }
-.open-source .card-btn {
-    font-size: 1.02rem;
-    width: 150px;
-    max-width: 200px;
-    padding: .4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .2s linear;
-    background-color: #31C4BE;
+.cards img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0;
+}
+.cards .title {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 120px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
     color: white;
-    display: none;
-    border: none !important;
+    z-index: 1;
+    transition: top .5s ease;
+}
+
+.cards:hover .title {
+    top: 90px;
+}
+
+.cards .button {
+    position: absolute;
+    width: 300px;
+    left:0;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.cards .button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+}
+
+.cards:hover .button {
+    opacity: 1;
 }
 
 
